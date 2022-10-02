@@ -48,7 +48,7 @@ defdic = json.loads(defaultStrip)
 
 dic = json.loads(newInfo)
 dic['ismoved'] = '0'
-for j in ["date","created","id","gwszdd","sfyqjzgc","jrsfqzys","jrsfqzfy"]:
+for j in ["date","created","id","gwszdd","sfyqjzgc","jrsfqzys","jrsfqzfy","sfzx"]:   # 2022.10.2补充"sfzx"这一判断案例
     dic[j] = defdic[j]
 dic['szgjcs'] = lastParam
 
