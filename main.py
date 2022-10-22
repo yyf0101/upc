@@ -3,6 +3,11 @@ import requests
 import json
 import lxml.html
 import re
+import random
+import time    #2022.10.22加入时间模块，引入随机时间
+
+shijian = random.randint(1,1000)   #2022.10.22加入随机数
+time.sleep(shijian)                #2022.10.22引入停止运行时间，造成随机运行现象
 
 signIn = {'username': os.environ["USERNAME"], #学号
           'password': os.environ["PASSWORD"]} #登陆密码
